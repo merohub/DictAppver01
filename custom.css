@@ -41,7 +41,7 @@ background-image: url('http://hitlarrajbhandari.com/images/back.jpg');
  background-size: cover;  
 }
 
-.ui-input-text{background: rgba(119, 197, 201, 0.59) none; border: 1px solid #99c5dd; color:#29393c;}
+.ui-input-text{background: rgba(119, 197, 201, 0.59) none; border: 1px solid #99c5dd; color:#08dfff;}
 input#submit:active{background-color: blue; opacity: 0.1; }
 
 
