@@ -37,7 +37,7 @@ background-image: url('http://hitlarrajbhandari.com/images/back.jpg');
   	height: auto;
 	color:#fff;
 	
-    background : transparent url('http://hitlarrajbhandari.com/images/back.jpg') 0 0 no-repeat;
+    background : transparent url('http://hitlarrajbhandari.com/images/back.jpg') 0 0 no-repeat fixed;
  background-size: cover;  
 }
 
