@@ -23,8 +23,13 @@
         type: 'POST',
         url: 'http://hitlarrajbhandari.com/check.php',
         data: srt,
+        beforeSend: function() {
+                                $('#someElement').html('<img src="http://hitlarrajbhandari.com/images/loading.gif" />');
+                            },
         success: function(d) {
-          $("#someElement").html(d);
+          setTimeout( function() {
+                                        $('#someElement').html(d);
+                                    }, 1000);
          
         }
     });    
