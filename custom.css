@@ -20,6 +20,7 @@
 	.ui-bar-h a.ui-link:active{color:#2489ce}
 	.ui-bar-h,.ui-bar-h input,.ui-bar-h select,.ui-bar-h textarea,
 	.ui-bar-h button{font-family:Helvetica,Arial,sans-serif}
+	/*
 .ui-body-h,.ui-overlay-h{
 	border:1px solid #aaa;
 	color:#fff;
@@ -29,7 +30,17 @@ background-image: url('http://hitlarrajbhandari.com/images/back.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
- }
+ }*/
+ .ui-body-h,{
+ 	width: 100%;
+ 	min-height: 100%;
+  	height: auto;
+	color:#fff;
+	
+    background : transparent url('http://hitlarrajbhandari.com/images/back.jpg') 0 0 no-repeat;
+ background-size: cover;  
+}
+
 
 input#submit:active{background-color: blue; opacity: 0.1; }
 
