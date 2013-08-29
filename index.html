@@ -22,7 +22,7 @@
         });
 
     </script>
-    
+    <!--
 <script>
 function suggest(inputString){
         if(inputString.length == 0) {
@@ -51,7 +51,7 @@ function hidesug(){
 }
 
 </script>
-    
+    -->
  <script>
         $(document).ready(function(){
             $("#input").submit(function(event) {
@@ -91,11 +91,8 @@ function hidesug(){
     <div data-role="content">    
  <div  id="wordoftheday"></div>
      <form id="input" method="post" data-ajax="false">
-    <div id="suggest">Enter a word <br /><div class="suggestionsBox" id="suggestions" style="display: none;">
-        <div class="suggestionList" id="suggestionsList"> &nbsp; </div>
-      </div>
-    
-    <input type="text" size="25" value="" id="word" name="word" onfocus="this.value = '';" onkeyup="suggest(this.value);" class="" autocomplete="off" />
+    Enter a word
+    <input type="text" size="25" value="" id="word" name="word" onfocus="this.value = '';" class="" autocomplete="off" />
   
    <input type="submit" id="submit" value="send " name="submit">
 </form>
@@ -110,7 +107,7 @@ function hidesug(){
 </div>
 
 <style type="text/css">
-
+/*
 #result {
     height:20px;
     font-size:16px;
@@ -164,7 +161,7 @@ ul {
     position:relative;
 }
 
-
+*/
 
 </style>
 
