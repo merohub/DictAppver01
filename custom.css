@@ -36,9 +36,9 @@ background-image: url('http://hitlarrajbhandari.com/images/back.jpg');
  	min-height: 100%;
   	height: auto;
 color:#161513;
-	
-    background : transparent url('http://hitlarrajbhandari.com/images/back.jpg') 0 0 no-repeat;
- background-size: cover;  
+ background-color: #fbfbfb;	
+    /*background : transparent url('http://hitlarrajbhandari.com/images/back.jpg') 0 0 no-repeat;
+ background-size: cover;  */
 }
 
 .ui-input-text{background: rgba(18, 40, 41, 0.59) none; border: 1px solid #99c5dd; color:#ffba08;}
