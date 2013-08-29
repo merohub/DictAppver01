@@ -26,19 +26,19 @@ function suggest(inputString){
         if(inputString.length == 0) {
             $('#suggestions').fadeOut();
         } else {
-        $('#country').addClass('load');
-            $.post("http://hitlarrajbhandari.com/autosuggest.php", {queryString: ""+inputString+""}, function(data){
+        $('#word').addClass('load');
+            $.post("autosuggest.php", {queryString: ""+inputString+""}, function(data){
                 if(data.length >0) {
                     $('#suggestions').show();
                     $('#suggestionsList').html(data);
-                    $('#country').removeClass('load');
+                    $('#word').removeClass('load');
                 }
             });
         }
     }
 
     function fill(thisValue) {
-        $('#country').val(thisValue);
+        $('#word').val(thisValue);
         //setTimeout("$('#suggestions').fadeOut();", 100);
         $('#suggestions').hide();
     }
@@ -88,7 +88,7 @@ function suggest(inputString){
         <div class="suggestionList" id="suggestionsList"> &nbsp; </div>
       </div>
     
-    <input type="text" name="word" id="word" placeholder="Enter a word" onfocus="this.value = '';">
+    <input type="text" size="25" value="" id="word" name="word" onkeyup="suggest(this.value);" class="" autocomplete="off" />
   
    <input type="submit" id="submit" value="submit " name="submit">
 </form>
