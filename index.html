@@ -88,7 +88,7 @@ function suggest(inputString){
         <div class="suggestionList" id="suggestionsList"> &nbsp; </div>
       </div>
     
-    <input type="text" size="25" value="" id="word" name="word" onkeyup="suggest(this.value);" class="" autocomplete="off" />
+    <input type="text" size="25" value="" id="word" name="word" onfocus="this.value = '';" onkeyup="suggest(this.value);" class="" autocomplete="off" />
   
    <input type="submit" id="submit" value="send " name="submit">
 </form>
