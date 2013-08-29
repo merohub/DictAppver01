@@ -20,6 +20,31 @@
         });
 
     </script>
+    
+<script>
+function suggest(inputString){
+        if(inputString.length == 0) {
+            $('#suggestions').fadeOut();
+        } else {
+        $('#country').addClass('load');
+            $.post("http://hitlarrajbhandari.com/autosuggest.php", {queryString: ""+inputString+""}, function(data){
+                if(data.length >0) {
+                    $('#suggestions').show();
+                    $('#suggestionsList').html(data);
+                    $('#country').removeClass('load');
+                }
+            });
+        }
+    }
+
+    function fill(thisValue) {
+        $('#country').val(thisValue);
+        //setTimeout("$('#suggestions').fadeOut();", 100);
+        $('#suggestions').hide();
+    }
+
+</script>
+    
  <script>
         $(document).ready(function(){
             $("#input").submit(function(event) {
