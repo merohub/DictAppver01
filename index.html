@@ -84,7 +84,11 @@ function suggest(inputString){
     <div data-role="content">    
  <div  id="wordoftheday"></div>
      <form id="input" method="post" data-ajax="false">
-    Enter word<input type="text" name="word" id="word" placeholder="Enter a word" onfocus="this.value = '';">
+    <div id="suggest">Enter a word <br /><div class="suggestionsBox" id="suggestions" style="display: none;">
+        <div class="suggestionList" id="suggestionsList"> &nbsp; </div>
+      </div>
+    
+    <input type="text" name="word" id="word" placeholder="Enter a word" onfocus="this.value = '';">
   
    <input type="submit" id="submit" value="submit " name="submit">
 </form>
@@ -98,7 +102,66 @@ function suggest(inputString){
 
 </div>
 
+<style type="text/css">
+#result {
+    height:20px;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
+    padding:5px;
+    margin-bottom:10px;
+    background-color:red;
+}
+#country{
+    padding:3px;
+    border:1px #CCC solid;
+    font-size:17px;
+}
+.suggestionsBox {
+    position: absolute;
+    left: 0px;
+    top:40px;
+    margin: 26px 0px 0px 0px;
+    width: 200px;
+    padding:0px;
+    background-color: #000;
+    border-top: 3px solid #000;
+    color: #fff;
+    z-index: 9999;
+}
+.suggestionList {
+    margin: 0px;
+    padding: 0px;
+}
+.suggestionList ul li {
+    list-style:none;
+    margin: 0px;
+    padding: 6px;
+    border-bottom:1px dotted orange;
+    cursor: pointer;
+}
+.suggestionList ul li:hover {
+    background-color: #FC3;
+    color:#000;
+}
+ul {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    color:#FFF;
+    padding:0;
+    margin:0;
+}
 
+.load{
+background-image:url(loader.gif);
+background-position:right;
+background-repeat:no-repeat;
+}
+
+#suggest {
+    position:relative;
+}
+</style>
 
 </body>
 </html>
