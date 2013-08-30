@@ -64,7 +64,7 @@ function hidesug(){
         url: 'http://hitlarrajbhandari.com/check.php',
         data: srt,
         beforeSend: function() {
-                                $('#someElement').html('<center><img src="http://hitlarrajbhandari.com/images/loading.gif" style="width:35px; height:35px;" /></center>').hide().fadeIn('fast');
+                                $('#loader').html('<center><img src="http://hitlarrajbhandari.com/images/loading.gif" style="width:35px; height:35px;" /></center>').hide().fadeIn('fast');
                             $('#someElement').hide();
                             },
         success: function(d) {
