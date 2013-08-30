@@ -40,6 +40,10 @@ height: auto;
  background-size: cover;  
 }*/
 
+.ui-content{font-family:'Actor',Arial,sans-serif;}
+.ui-body-h{ 
+
+font-family:'Actor'Helvetica,Arial,sans-serif;}
 
 input#submit:active{background-color: blue; opacity: 0.1; }
 
