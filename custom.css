@@ -39,7 +39,7 @@ height: auto;
    background : transparent url('http://hitlarrajbhandari.com/images/back.jpg') 0 0 no-repeat fixed;
  background-size: cover;  
 }*/
-
+#time{float: right; margin-top: -14px; text-shadow:none; font-size: 11px; color: #0d0d0c;}
 .ui-content{font-family:'Actor',Arial,sans-serif;}
 .ui-body-h{ 
 
