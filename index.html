@@ -64,12 +64,14 @@ function hidesug(){
         url: 'http://hitlarrajbhandari.com/check.php',
         data: srt,
         beforeSend: function() {
-                                $('#someElement').html('<center><img src="http://hitlarrajbhandari.com/images/loading.gif" style="width:35px; height:35px;" /></center>');
+                                $('#someElement').html('<center><img src="http://hitlarrajbhandari.com/images/loading.gif" style="width:35px; height:35px;" /></center>').hide().fadeIn('fast');
+                            $('#someElement').hide();
                             },
         success: function(d) {
           setTimeout( function() {
-                                        $('#someElement').html(d);
-                                    }, 1000);
+                                         $('#loader').hide();
+                                        $('#someElement').html(d).hide().fadeIn(1000);
+                                   }, 1000);
          
         }
     });    
@@ -95,6 +97,7 @@ function hidesug(){
     <input type="text" id="word" placeholder="Enter a word" name="word" onfocus="this.value = '';" autocomplete="off" />
   
    <input type="submit" id="submit" value="Show meaning " name="submit">
+    <div id="loader"></div>
    <div id="someElement"></div>
 </form>
 
